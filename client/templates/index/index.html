@@ -1,0 +1,52 @@
+<template name="fxCalculation">
+	<div class="container">
+		<div class="jumbotron">
+				<h1>Foreign Exchange Calculator </h1>
+				<hr>
+		</div> <!--End of class 1strow -->	
+
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Welcome </h1>
+			</div>			
+		</div> <!--End of 2nd class row -->
+
+		<div class="row">
+			<form role="form">
+				<div class="col-xs-3 form-group">
+				    <select class="form-control" id="srcCcy">
+						 {{#each currency}}
+                            <option value="{{name}}">{{name}}</option>
+                        {{/each}}
+
+                
+					</select>
+				</div>
+
+				<div class="col-xs-3 form-group">
+					<input class="form-control" type="text" id="src_amt"  placeholder="Enter amount here to be converted">
+				</div>	
+
+				<div class="col-xs-3 form-group">
+					<input class="form-control" type="text" id="dst_amt"   placeholder="Converted amount will be displayed here">
+				</div>	
+				
+				<div class="col-xs-3">
+					<select class="form-control" id="dstCcy">
+					 	{{#each currency}}
+                            <option value="{{name}}">{{ name }}</option>
+                        {{/each}}
+					</select>
+				</div>
+			</form>	
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12">
+				<button id="convert-btn" type="button" class="btn btn-default">Convert</button>
+			</div>	
+
+		</div>	
+
+	</div>	<!-- End of div class container -->
+</template>

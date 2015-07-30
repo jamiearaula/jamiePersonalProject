@@ -1,0 +1,50 @@
+<template name="login">
+	<div class="container">
+		<div class="row">
+				<h1>Login</h1>
+				<hr>
+		</div> <!--End of class 1strow -->	
+
+		<div class="row">
+			<div class="alert alert-warning" id ="userExist-alert"  hidden>
+                <p>User doesn't exist/ Wrong password/Account not verified. Try again.</p>
+            </div>
+ 	
+ 			
+		</div>	
+
+		<form role="role">	
+			<div class="row">
+				<div class="col-xs-4">
+					<label for="emailAdd">Email  Address:</label> 
+
+				
+					<input class="form-control" type="text" id="emailAdd">
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4">
+					<label for="pwd">Password:</label> 
+					<input class="form-control" type="password" id="pwd">
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<button id="log-btn" type="button" class="btn btn-default">Login</button>
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<label for="no_acc">No account?</label>
+		
+				
+					<button id="reg-btn" type="button" class="btn btn-default">Register Here</button>
+				</div>
+			</div>	
+		</form>	
+	</div>	
+
+</template>

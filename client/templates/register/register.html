@@ -1,0 +1,59 @@
+<template name="register">
+	<div class="container">
+		<div class="row">
+			<h1>Register</h1>
+			<hr>
+		</div>	
+
+		<div class="row">
+			<div class="alert alert-warning" id ="userExist-alert"  hidden>
+                <p>User already exist. Try again.</p>
+            </div>
+
+            <div class="alert alert-success" id ="userRegistered-alert"  hidden>
+                <p>You are registered! Please check your email to verify your account.</p>
+            </div>
+
+		</div>	
+
+
+		<form role="form">
+			<div class="row">
+				<div class="col-xs-3">
+				 	<label for="emailAdd">Email  Address:</label> 
+				</div>	
+
+				<div class="col-xs-4">
+					<input class="form-control" type="text" id="emailAdd">
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<label for="pwd">Password:</label> 
+				</div>	
+
+				<div class="col-xs-4">
+					<input class="form-control" type="password" id="pwd">
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="col-xs-3">
+					<label for="rtpwd">Re-type password:</label> 
+				</div>	
+
+				<div class="col-xs-4">
+					<input class="form-control" type="password" id="rtpwd">
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<button id="register-btn" type="button" class="btn btn-default">Register Now</button>
+				</div>	
+			</div>
+
+		</form>	
+	</div>	
+</template>	
